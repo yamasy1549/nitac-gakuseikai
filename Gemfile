@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
 gem 'rails', '4.2.1'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -16,18 +15,27 @@ gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery'
 gem 'rails-assets-jquery-ujs'
 
-group :development, :test do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
+group :development, :test  do
+  gem 'rspec-rails'
+  gem 'sqlite3'
 
-group :development do
+  gem 'byebug'
+  gem 'hirb'
+  gem 'hirb-unicode'
   gem 'pry-rails'
   gem 'pry-coolline'
   gem 'pry-doc'
   gem 'pry-stack_explorer'
   gem 'pry-byebug'
 
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+end
+
+group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 
@@ -38,4 +46,8 @@ group :development do
   gem 'xray-rails'
 
   gem 'annotate'
+end
+
+group :test do
+  gem 'database_rewinder'
 end
