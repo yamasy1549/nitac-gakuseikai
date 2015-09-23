@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require font-awesome
  *= require_self
  */
 
@@ -70,6 +69,9 @@ $icon-font-path: "bootstrap-sass-official/";
 // Utility classes
 @import 'bootstrap-sass-official/bootstrap/utilities';
 @import 'bootstrap-sass-official/bootstrap/responsive-utilities';
+
+// font-awesome
+@import 'font-awesome';
 
 // Originals
 @import 'common';
