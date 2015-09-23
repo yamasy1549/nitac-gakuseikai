@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get 'clubs', :to => 'statics#clubs'
   get 'links', :to => 'statics#links'
 
-  resources :articles
+  resources :articles, except: [:index]
 end
