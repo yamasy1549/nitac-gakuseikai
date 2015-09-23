@@ -1,0 +1,60 @@
+links:
+  schools:
+    - name: 独立行政法人<br>国立高等専門学校機構
+      url: http://www.kosen-k.go.jp/
+      img: sch-kosenkikoh.png
+    - name: 国立明石工業高等専門学校
+      url: http://www.akashi.ac.jp/
+      img: sch-akashi.png
+    - name: 大阪府立大学工業高等専門学校
+      url: http://www.osaka-pct.ac.jp/
+      img: sch-osaka.png
+    - name: 神戸市立工業高等専門学校
+      url: http://www.kobe-kosen.ac.jp/
+      img: sch-kobe.png
+    - name: 国立奈良工業高等専門学校
+      url: http://www.nara-k.ac.jp/
+      img: sch-nara.png
+    - name: 国立舞鶴工業高等専門学校
+      url: http://www.maizuru-ct.ac.jp/
+      img: sch-maizuru.png
+    - name: 国立和歌山工業高等専門学校
+      url: http://www.wakayama-nct.ac.jp/
+      img: sch-wakayama.png
+    - name: 近畿大学工業高等専門学校
+      url: http://www.ktc.ac.jp/
+      img: sch-kinki.png
+
+  associations:
+    - name: 大阪府立大学工業高等専門学校<br>学友会執行部
+      url: http://www.osaka-pct.ac.jp/gakuyukai/
+      img: ass-osaka.png
+    - name: 神戸市立工業高等専門学校<br>中央執行委員会
+      url: http://www.kobe-kosen.ac.jp/groups/gakuseikai/
+      img: ass-kobe.png
+    - name: 国立奈良工業高等専門学校<br>学生会
+      url: http://www.nara-k.ac.jp/life/gakuseikai/
+      img: ass-nara.png
+    - name: 国立舞鶴工業高等専門学校<br>学生会
+      url: http://www.maizuru-ct.ac.jp/gakuseikai
+      img: ass-maizuru.png
+    - name: 国立和歌山工業高等専門学校<br>学生会
+      url: http://www.wakayama-nct.ac.jp/gakusei/gakuseikai-gakusei/about.html
+      img: ass-wakayama.png
+    - name: 高専辞典<br>― 近畿7高専共同PRサイト
+      url: http://www.kinki7kosen.jp/
+      img: ass-7kosen.png
+
+  nitac:
+    facebook:
+      service: Facebook
+      url: https://www.facebook.com/pages/%E5%9B%BD%E7%AB%8B%E6%98%8E%E7%9F%B3%E5%B7%A5%E6%A5%AD%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%9F%B7%E8%A1%8C%E9%83%A8/439126599475812
+    twitter:
+      service: Twitter
+      url: https://twitter.com/act_gakuseikai
+    blog:
+      service: ブログ
+      url: http://actgkai.exblog.jp/
+    github:
+      service: GitHub
+      url: https://github.com/yamasy1549/nitac-gakuseikai

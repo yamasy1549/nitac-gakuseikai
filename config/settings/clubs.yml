@@ -1,0 +1,210 @@
+clubs:
+  sport:
+    - name: 水泳部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 剣道部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 柔道部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 野球部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 陸上競技部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 男子バレーボール部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: サッカー部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: ハンドボール部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 男子バスケットボール部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: ソフトテニス部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 卓球部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: クライミング部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: テニス部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: バドミントン部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 女子バレーボール部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 空手部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+
+  culture:
+    - name: ESS部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 音楽部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 合唱団 Fons Musicae
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 茶道部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 写真部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 情報工学研究部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 吹奏楽部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: ロボット工学研究部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 視覚メディア研究部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: Web製作研究部
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+
+  others:
+    - name: 棋道同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: ものづくり研究会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: イングリッシュガーデン同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: ゲーム創作研究会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 水と緑の同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 体操同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: フットサル同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
+    - name: 女子バスケットボール同好会
+      activeday: 
+      active-time:
+      place:
+      sitename:
+      siteurl:
