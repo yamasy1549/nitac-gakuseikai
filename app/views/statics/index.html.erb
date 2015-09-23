@@ -38,7 +38,7 @@
         <article>
           <h3><%= article.title %><small>（<%= article.created_at.strftime("%Y/%m/%d") %>）</small></h3>
           <%= truncate(article.content, omission: '...', length: 300) %>
-          <a href="">続きを読む</a>
+          <%= link_to '続きを読む', article_url(article) %>
         </article>
         <hr>
       <% end %>
