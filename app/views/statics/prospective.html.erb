@@ -1,0 +1,50 @@
+<p>
+  学生会執行部というのは、皆さんの学校でいう生徒会のような組織です。
+  ただ高専の場合は先生の指示ではなく、学生主導で行事の運営といった
+  学校を変え、より良くする仕事をしています。
+  ここでは学生会執行部の仕組み・主な仕事・運営している行事をまとめています。
+</p>
+
+<hr>
+
+<h3>局紹介</h3>
+
+<p>
+  学生会執行部は6つの局に分かれています。それぞれの局がそれぞれの仕事を持っています。
+</p>
+
+<ul class="departments">
+  <% Settings.activities.departments.each do |department| %>
+    <li>
+      <div class="card department-card row">
+        <div class="department-detail col-md-8 col-sm-8">
+          <h4><%= department.name %></h4>
+          <p><%= department.detail %></p>
+        </div>
+        <div class="col-md-4 col-sm-4 department-img">
+          <%= image_tag department.image %>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>執行部主催の行事</h3>
+
+<ul class="events">
+  <% Settings.activities.events.each_with_index do |event, i| %>
+    <li>
+      <div class="card event-card row" id="event-card<%= i + 1 %>">
+        <div class="col-md-4 col-sm-4 event-img">
+          <%= image_tag event.image, id: "event-img#{i + 1}" %>
+        </div>
+        <div class="event-detail col-md-8 col-sm-8">
+          <h4><%= event.name %></h4>
+          <p><%= event.detail %></p>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

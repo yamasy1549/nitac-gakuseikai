@@ -1,0 +1,21 @@
+<p>
+  学生会執行部の広報局は毎月学校の広報紙・ACTimesを発行しています。
+  明石高専の様々な情報を載せているので是非ご覧ください。
+</p>
+
+<hr>
+
+<section>
+  <ul class="actimes row">
+    <% Settings.actimes.actimes.each do |actime| %>
+      <li class="col-md-6">
+        <%= link_to actime.url do %>
+          <div class="card actimes-card">
+            <%= image_tag actime.img, class: 'actimes-img' %>
+            <div class="actimes-title"><%= actime.date %>号 「<%= actime.title %>」</div>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>
