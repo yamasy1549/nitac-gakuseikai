@@ -73,9 +73,9 @@
         </div>
       </nav>
 
-      <div class="main-img">
-        <%= image_tag 'top.JPG', alt: 'トップ画像' %>
-      </div>
+        <div class="main-img">
+          <%= image_tag 'top.JPG', alt: 'トップ画像' if params[:action] == 'index' %>
+        </div>
 
       <div class="container col-md-offset-2 col-md-8">
         <%= yield %>
