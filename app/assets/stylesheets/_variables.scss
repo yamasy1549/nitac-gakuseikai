@@ -1,0 +1,57 @@
+//// colors ////
+
+// officials //
+$nitac-official: #a14c4c;
+$facebook-official: #3b5998;
+$twitter-official: #55acee;
+$blog-official: $nitac-official;
+
+// others //
+$white: #ffffff;
+$gray: #666666;
+$green-light: #80b552;
+
+
+//// shapes ////
+$base-radius: 4px;
+$base-size: 16px;
+$base-line-height: 200%;
+
+$margin-small: 10px;
+$margin-medium: 30px;
+$margin-large: 60px;
+
+$padding-small: 10px;
+$padding-medium: 30px;
+$padding-large: 60px;
+
+
+//// components ////
+
+// navbar //
+$navbar-bg: $white;
+$navbar-border-color: transparent;
+$navbar-height: 50px;
+$navbar-radius: 0;
+
+// header //
+$header-height: 90px;
+
+// footer //
+$footer-height: 50px;
+$footer-color: $white;
+$footer-bg: $gray;
+
+// button //
+$btn-radius: $base-radius;
+$btn-width: 160px;
+$btn-height: 50px;
+
+// card //
+$card-border-color: $gray;
+$card-border-radius: $base-radius;
+
+// all //
+$base-bg: $white;
+$base-color: $gray;
+
