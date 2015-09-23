@@ -19,7 +19,7 @@
       <div class="card department-card row">
         <div class="department-detail col-md-8 col-sm-8">
           <h4><%= department.name %></h4>
-          <p><%= department.detail %></p>
+          <p><%= department.detail.html_safe %></p>
         </div>
         <div class="col-md-4 col-sm-4 department-img">
           <%= image_tag department.image %>

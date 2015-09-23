@@ -1,6 +1,6 @@
 links:
   schools:
-    - name: 独立行政法人<br>国立高等専門学校機構
+    - name: 独立行政法人 国立高等専門学校機構
       url: http://www.kosen-k.go.jp/
       img: sch-kosenkikoh.png
     - name: 国立明石工業高等専門学校
@@ -26,22 +26,22 @@ links:
       img: sch-kinki.png
 
   associations:
-    - name: 大阪府立大学工業高等専門学校<br>学友会執行部
+    - name: 大阪府立大学工業高等専門学校 学友会執行部
       url: http://www.osaka-pct.ac.jp/gakuyukai/
       img: ass-osaka.png
-    - name: 神戸市立工業高等専門学校<br>中央執行委員会
+    - name: 神戸市立工業高等専門学校 中央執行委員会
       url: http://www.kobe-kosen.ac.jp/groups/gakuseikai/
       img: ass-kobe.png
-    - name: 国立奈良工業高等専門学校<br>学生会
+    - name: 国立奈良工業高等専門学校 学生会
       url: http://www.nara-k.ac.jp/life/gakuseikai/
       img: ass-nara.png
-    - name: 国立舞鶴工業高等専門学校<br>学生会
+    - name: 国立舞鶴工業高等専門学校 学生会
       url: http://www.maizuru-ct.ac.jp/gakuseikai
       img: ass-maizuru.png
-    - name: 国立和歌山工業高等専門学校<br>学生会
+    - name: 国立和歌山工業高等専門学校 学生会
       url: http://www.wakayama-nct.ac.jp/gakusei/gakuseikai-gakusei/about.html
       img: ass-wakayama.png
-    - name: 高専辞典<br>― 近畿7高専共同PRサイト
+    - name: 高専辞典 ― 近畿7高専共同PRサイト
       url: http://www.kinki7kosen.jp/
       img: ass-7kosen.png
 
