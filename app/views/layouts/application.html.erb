@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NitacGakuseikai</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="明石高専 学生会執行部 公式ページ">
+    <meta name="author" content="明石高専 学生会執行部">
+    <meta name="description" content="明石高専 学生会執行部の公式ページです。活動報告などを載せていきます。">
+    <meta name="keywords" content="明石高専, NITAC, ANCT, 学生会, 執行部">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="明石高専 学生会執行部 公式ページ">
+    <meta property="og:description" content="明石高専 学生会執行部の公式ページです。活動報告などを載せていきます。">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://www.akashi.ac.jp/contents/Gakusei/Gakuseikai/">
+    <meta property="og:site_name" content="明石高専 学生会執行部 公式ページ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="fb:admins" content="">
+    <meta property="fb:app_id" content="">
+    <meta content="summary" name="twitter:card">
+    <meta content="@yamasy1549" name="twitter:site">
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-</body>
+    <title>明石高専 学生会執行部 | <%#= current_page.data.title || nil %></title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <%= link_to root_url, class: 'visible-lg' do %>
+              <%= image_tag 'logo.png', alt: '明石高専 学生会ロゴ', class: 'logo' %>
+            <% end %>
+          </div>
+          <div class="col-lg-10 col-sm-10">
+            <a href="/index.html"><h1>明石高専 学生会執行部</h1></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="row">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse row" id="navbar-toggle">
+            <ul class="nav navbar-nav">
+              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'index' %>">
+                <%= link_to '新着情報', root_url %>
+              </li>
+              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'prospective' %>">
+                <%= link_to '中学生の方へ', prospective_url %>
+              </li>
+              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'actimes' %>">
+                <%= link_to 'ACTimes', actimes_url %>
+              </li>
+              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'clubs' %>">
+                <%= link_to '部活動', clubs_url %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-img">
+        <%= image_tag 'top.jpg', alt: 'トップ画像' %>
+      </div>
+
+      <div class="container col-md-offset-2 col-md-8">
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <%= link_to Settings.links.nitac.github.url, { target: '_blank' } do %>
+          <i class="fa fa-github"></i>
+        <% end %>
+        2015 - designed by <a href="http://yamasy.info" target="_blank">yamasy</a>
+      </p>
+    </footer>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': true %>
+  </body>
 </html>
