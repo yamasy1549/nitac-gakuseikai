@@ -1,0 +1,14 @@
+<table class="table">
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= truncate(article.content, omission: '...', length: 36) %></td>
+      <td>
+        <div class="btn-actions">
+          <%= btn_xs_show(article_path(article)) %>
+          <%= btn_xs_delete(article) %>
+        </div>
+      </td>
+    </tr>
+  <% end %>
+</table>
