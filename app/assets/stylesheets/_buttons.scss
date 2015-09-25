@@ -1,0 +1,25 @@
+.btn-actions {
+  .btn {
+    border-color: $nitac-official;
+    border-radius: $btn-radius;
+    background-color: $white;
+    color: $gray;
+
+    &:hover {
+      border-color: $white;
+      background-color: $nitac-official;
+      color: $white;
+    }
+  }
+}
+
+.btn-edit,
+.btn-back,
+.btn-show,
+.btn-delete {
+  margin-top: 20px;
+}
+
+.btn-actions {
+  margin: 5px auto 20px auto;
+}
