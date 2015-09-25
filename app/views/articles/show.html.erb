@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<article class="news">
+  <h2><%= @article.title %>（<%= @article.created_at.strftime("%Y/%m/%d") %>）</h2>
 
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
+  <div class="btn-actions">
+    <%= btn_edit(edit_article_path(@article)) %>
+    <%= btn_delete(@article) %>
+  </div>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+  <p><%= @article.content.html_safe %></p>
+</article>

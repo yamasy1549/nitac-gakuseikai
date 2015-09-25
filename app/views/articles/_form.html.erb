@@ -11,15 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_area :content, size: '20x20', class: 'form-control' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="btn-actions">
+    <%= f.submit '投稿する', class: 'btn btn-default' if params[:action] == 'new' %>
+    <%= f.submit '完了する', class: 'btn btn-default' if params[:action] == 'edit' %>
   </div>
 <% end %>
