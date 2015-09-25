@@ -1,4 +1,6 @@
 .btn-actions {
+  margin: 5px auto 20px auto;
+
   .btn {
     border-color: $nitac-official;
     border-radius: $btn-radius;
@@ -16,10 +18,8 @@
 .btn-edit,
 .btn-back,
 .btn-show,
+.btn-index,
+.btn-new,
 .btn-delete {
-  margin-top: 20px;
-}
-
-.btn-actions {
-  margin: 5px auto 20px auto;
+  /* margin-top: 20px; */
 }

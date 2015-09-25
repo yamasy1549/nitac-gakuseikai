@@ -35,8 +35,14 @@
               <%= image_tag 'logo.png', alt: '明石高専 学生会ロゴ', class: 'logo' %>
             <% end %>
           </div>
-          <div class="col-lg-10 col-sm-10">
+          <div class="col-lg-6 col-sm-6">
             <a href="/index.html"><h1>明石高専 学生会執行部</h1></a>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div class="btn-actions">
+              <%= btn_new(new_article_path) %>
+              <%= btn_index(articles_path) %>
+            </div>
           </div>
         </div>
       </div>
