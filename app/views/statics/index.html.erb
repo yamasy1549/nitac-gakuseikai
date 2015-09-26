@@ -36,7 +36,7 @@
     <div class="news">
       <% @articles.take(2).each do |article| %>
         <article>
-          <h3><%= article.title %><small>（<%= article.created_at.strftime("%Y/%m/%d") %>）</small></h3>
+          <h3><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h3>
           <div class="btn-actions">
             <%= btn_xs_show(article_path(article)) %>
             <%= btn_xs_delete(article) %>
@@ -54,7 +54,7 @@
         <% @articles.each do |article| %>
           <li>
             <%= link_to article_url(article) do %>
-              <%= article.created_at.strftime("%Y/%m/%d") %> <%= article.title %>
+              <%= article.created_at.strftime("%Y.%m.%d") %> <%= article.title %>
               <div class="btn-actions">
                 <%= btn_xs_edit(edit_article_path(article)) %>
                 <%= btn_xs_delete(article) %>
