@@ -84,6 +84,13 @@
         </div>
 
       <div class="container col-md-offset-2 col-md-8">
+        <% if notice %>
+          <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+
         <%= yield %>
       </div>
     </main>

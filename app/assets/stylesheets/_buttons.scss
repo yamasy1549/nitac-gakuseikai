@@ -11,6 +11,7 @@
       border-color: $white;
       background-color: $nitac-official;
       color: $white;
+      text-decoration: none;
     }
   }
 }
@@ -22,4 +23,20 @@
 .btn-new,
 .btn-delete {
   /* margin-top: 20px; */
+}
+
+.sns-buttons {
+  .btn-facebook { @include btn-original($facebook-official, $btn-width, $btn-height); }
+  .btn-twitter { @include btn-original($twitter-official, $btn-width, $btn-height); }
+  .btn-blog { @include btn-original($blog-official, $btn-width, $btn-height); }
+
+  li { margin-bottom: $margin-small; }
+}
+
+.sns-buttons-sm {
+  .btn-facebook { @include btn-original($facebook-official, 100px, 100px); }
+  .btn-twitter { @include btn-original($twitter-official, 100px, 100px); }
+  .btn-blog { @include btn-original($blog-official, 100px, 100px); }
+
+  li { margin-bottom: $margin-small; }
 }

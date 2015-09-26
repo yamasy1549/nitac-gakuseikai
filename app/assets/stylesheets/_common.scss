@@ -25,7 +25,7 @@ header {
   }
 
   .logo {
-    width: 50%;
+    height: 59px;
     position: absolute;
     right: 0;
   }
@@ -54,7 +54,7 @@ footer {
 }
 
 main {
-  margin-top: $header-height;
+  margin-top: $header-height + 10px;
   margin-bottom: $footer-height;
   min-height: 100%;
 
