@@ -1,0 +1,75 @@
+//// colors ////
+
+$white: #ffffff;
+$gray: #666666;
+$green-light: #80b552;
+
+$nitac-official: #a14c4c;
+$facebook-official: #3b5998;
+$twitter-official: #55acee;
+$blog-official: $green-light;
+
+$dep-taiiku-official: #fdd212;
+$dep-bunka-official: #8ec31e;
+$dep-koho-official: #007bc3;
+$dep-shoki-official: #e73828;
+$dep-kaikei-official: #952d1f;
+$dep-kankyo-official: #78c397;
+
+//// shapes ////
+$base-radius: 4px;
+$base-size: 16px;
+$base-line-height: 200%;
+
+$space-small: 10px;
+$space-medium: 30px;
+$space-large: 60px;
+
+
+//// components ////
+
+$body-bg: $white;
+$body-color: $gray;
+$body-font-size: $base-size;
+$body-line-height: $base-line-height;
+
+$btn-bg: $white;
+$btn-border: $gray;
+$btn-color: $gray;
+$btn-radius: $base-radius;
+$btn-width: 160px;
+$btn-height: 50px;
+
+$card-border-color: $gray;
+$card-border-radius: $base-radius;
+$card-detail-width: 60%;
+$card-detail-padding: 5%;
+$card-img-width: 100% - $card-detail-width - $card-detail-padding * 2;
+
+$footer-height: 50px;
+$footer-color: $white;
+$footer-bg: $gray;
+
+$header-color: $gray;
+$header-height: 50px;
+$header-logo-height: 50px;
+$header-padding: $space-small 10%;
+$header-title-width: 50%;
+
+$hr-margin: $space-large;
+
+$main-margin-top: $space-large;
+
+$nav-bg: $white;
+$nav-border-color: $gray;
+$nav-border-bottom-color: $gray;
+$nav-color: $gray;
+$nav-height: 40px;
+$nav-hover-bg: $gray;
+$nav-hover-color: $white;
+$nav-radius: 0;
+
+$sns-buttons-padding: 5%;
+$sns-buttons-width: 25%;
+
+$index-width: 100% - $sns-buttons-padding * 2 - $sns-buttons-width;
