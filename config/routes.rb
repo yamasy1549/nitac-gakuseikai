@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'users/create'
+  root 'statics#index'
 
-  devise_for :users
-  root :to => 'statics#index'
+  devise_for :users, only: [:sessions, :invitations]
+
   get 'prospective', :to => 'statics#prospective'
   get 'actimes', :to => 'statics#actimes'
   get 'clubs', :to => 'statics#clubs'
