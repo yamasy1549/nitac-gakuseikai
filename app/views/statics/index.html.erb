@@ -19,49 +19,48 @@
       <i class="fa fa-globe"></i> リンク
     <% end %>
   </li>
-  <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a>
-  <%# <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> %>
+  <%# <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a> %>
 </ul>
 
-  <div class="col-md-8 col-sm-12">
-    <div class="news">
-      <% @articles.take(2).each do |article| %>
-        <article>
-          <h2><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h2>
-          <% if user_signed_in? %>
-            <div class="btn-actions">
-              <%= btn_xs_show(article_path(article)) %>
-              <%= btn_xs_delete(article) %>
-            </div>
-          <% end %>
-          <div class="news-content">
-            <%= truncate(article.content, omission: '...', length: 300) %>
-            <%= link_to '続きを読む', article_url(article) %>
+<div class="index">
+  <div class="news">
+    <% @articles.take(2).each do |article| %>
+      <article>
+        <h2><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h2>
+        <% if user_signed_in? %>
+          <div class="btn-actions">
+            <%= btn_xs_edit(edit_article_path(article)) %>
+            <%= btn_xs_delete(article) %>
           </div>
-        </article>
-        <hr>
-      <% end %>
-    </div>
-
-    <div class="backnumbers">
-      <h2>バックナンバー</h2>
-      <ul>
-        <% @articles.each do |article| %>
-          <li>
-            <%= link_to article_url(article) do %>
-              <%= article.created_at.strftime("%Y.%m.%d") %> <%= article.title %>
-              <% if user_signed_in? %>
-                <div class="btn-actions">
-                  <%= btn_xs_edit(edit_article_path(article)) %>
-                  <%= btn_xs_delete(article) %>
-                </div>
-              <% end %>
-            <% end %>
-          </li>
         <% end %>
-      </ul>
-    </div>
+        <div class="news-content">
+          <%= truncate(article.content, omission: '...', length: 300) %>
+          <%= link_to 'すべて見る', article_url(article) %>
+        </div>
+      </article>
+      <hr>
+    <% end %>
   </div>
+
+  <div class="backnumbers">
+    <h2>バックナンバー</h2>
+    <ul>
+      <% @articles.each do |article| %>
+        <li>
+          <%= link_to article_url(article) do %>
+            <%= article.created_at.strftime("%Y.%m.%d") %> <%= article.title %>
+            <% if user_signed_in? %>
+              <div class="btn-actions">
+                <%= btn_xs_edit(edit_article_path(article)) %>
+                <%= btn_xs_delete(article) %>
+              </div>
+            <% end %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
 <!--
   <div class="sns-buttons-sm visible-sm col-sm-12 text-center">
@@ -87,3 +86,5 @@
     </a>
   </div>
   -->
+
+  <%# <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> %>
