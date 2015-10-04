@@ -10,7 +10,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'devise'
+gem 'devise',           '~> 3.5.2'
+gem 'devise_invitable', '~> 1.5.2'
 gem 'config'
 
 gem 'rails-assets-font-awesome'
