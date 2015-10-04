@@ -3,18 +3,18 @@ activities:
     - name: 体育局
       detail: 秋のスポーツ大会、年末年始のサッカー大会の運営を行っています。また運動系クラブの統括も行っており、体育館の使用の割り振りなどの仕事があります。
       en: dep-taiiku
-    - name: 文化局
-      detail: 新入生が部活を選ぶ為の部活動紹介の運営・毎年行われる文化発表会の運営・発表を行っています。様々な企画を立ち上げ文化発表会を盛り上げています。
-      en: dep-bunka
-    - name: 会計局
-      detail: 学生の皆さんが購入した、部活動で使用する物品などの代金を学校から受け取るまでの仲介を行っています。学生の皆さんから集める学生会費の管理と部活の予算案を作成します。
-      en: dep-kaikei
     - name: 環境局
       detail: 明石高専キャンパスの美化及び環境維持に取り組んでいます。中庭の芝生管理や花壇の造成、学生がくつろげるウッドデッキの設置等様々な取り組みをしています。
       en: dep-kankyo
     - name: 書記局
       detail: 毎週月曜日に行われる学生会執行部の定例会の議事録の作成を行っています。各部活の活動内容を調べ、管理を行っています。
       en: dep-shoki
+    - name: 文化局
+      detail: 新入生が部活を選ぶ為の部活動紹介の運営・毎年行われる文化発表会の運営・発表を行っています。様々な企画を立ち上げ文化発表会を盛り上げています。
+      en: dep-bunka
+    - name: 会計局
+      detail: 学生の皆さんが購入した、部活動で使用する物品などの代金を学校から受け取るまでの仲介を行っています。学生の皆さんから集める学生会費の管理と部活の予算案を作成します。
+      en: dep-kaikei
     - name: 広報局
       detail: 執行部の活動や、各行事の様子を様々なメディアを使って発信しています。<a href="https://www.facebook.com/pages/%E5%9B%BD%E7%AB%8B%E6%98%8E%E7%9F%B3%E5%B7%A5%E6%A5%AD%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1-%E5%AD%A6%E7%94%9F%E4%BC%9A%E5%9F%B7%E8%A1%8C%E9%83%A8/439126599475812" target="_blank">Facebook</a>・<a href="https://twitter.com/act_gakuseikai" target="_blank">Twitter</a>・<a href="http://actgkai.exblog.jp/" target="_blank">ブログ</a>の管理や<a href="/actimes.html">ACTimes</a>の発行、また他高専との交流もしています。
       en: dep-koho
