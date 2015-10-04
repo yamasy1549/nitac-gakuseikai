@@ -28,73 +28,54 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
-            <%= link_to root_url, class: 'visible-lg' do %>
-              <%= image_tag 'logo.png', alt: '明石高専 学生会ロゴ', class: 'logo' %>
-            <% end %>
-          </div>
-          <div class="col-lg-6 col-sm-6">
-            <a href="/index.html"><h1>明石高専 学生会執行部</h1></a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <% if user_signed_in? %>
-              <div class="btn-actions">
-                <%= btn_new(new_article_path) %>
-                <%= btn_index(articles_path) %>
-              </div>
-            <% end %>
-          </div>
+      <h1>
+        <%= link_to root_url, class: 'visible-lg' do %>
+          <%= image_tag 'logo.png', alt: '明石高専 学生会ロゴ', class: 'logo' %>
+          明石高専 学生会執行部
+        <% end %>
+      </h1>
+
+      <% if user_signed_in? %>
+        <div class="btn-actions">
+          <%= current_user.email %>
+          <%= btn_new(new_article_path) %>
+          <%= btn_index(articles_path) %>
         </div>
-      </div>
+      <% end %>
     </header>
 
-    <main class="row">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-toggle">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
+    <nav>
+      <ul>
+        <li class="<%= 'now' if params[:action] == 'index' %>">
+          <%= link_to '新着情報', root_url %>
+        </li>
+        <li class="<%= 'now' if params[:action] == 'prospective' %>">
+          <%= link_to '中学生の方へ', prospective_url %>
+        </li>
+        <li class="<%= 'now' if params[:action] == 'actimes' %>">
+          <%= link_to 'ACTimes', actimes_url %>
+        </li>
+        <li class="<%= 'now' if params[:action] == 'clubs' %>">
+          <%= link_to '部活動', clubs_url %>
+        </li>
+      </ul>
+    </nav>
 
-          <div class="collapse navbar-collapse row" id="navbar-toggle">
-            <ul class="nav navbar-nav">
-              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'index' %>">
-                <%= link_to '新着情報', root_url %>
-              </li>
-              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'prospective' %>">
-                <%= link_to '中学生の方へ', prospective_url %>
-              </li>
-              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'actimes' %>">
-                <%= link_to 'ACTimes', actimes_url %>
-              </li>
-              <li class="col-md-3 col-sm-3 <%= "now" if params[:action] == 'clubs' %>">
-                <%= link_to '部活動', clubs_url %>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="main-img">
+      <%= image_tag 'top.JPG', alt: 'トップ画像' if params[:action] == 'index' %>
+    </div>
 
-        <div class="main-img">
-          <%= image_tag 'top.JPG', alt: 'トップ画像' if params[:action] == 'index' %>
-        </div>
-
-      <div class="container col-md-offset-2 col-md-8">
+    <main>
+      <% if user_signed_in? %>
         <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
+          <p class="notice"><%= notice %></p>
         <% end %>
         <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
+          <p class="alert"><%= alert %></p>
         <% end %>
+      <% end %>
 
-        <%= yield %>
-      </div>
+      <%= yield %>
     </main>
 
     <footer>
@@ -102,7 +83,7 @@
         <%= link_to Settings.links.nitac.github.url, { target: '_blank' } do %>
           <i class="fa fa-github"></i>
         <% end %>
-        2015 - designed by <a href="http://yamasy.info" target="_blank">yamasy</a>
+        2015 - designed by <%= link_to 'yamasy', 'http://yamasy.info', { target: '_blank' } %>
       </p>
     </footer>
 

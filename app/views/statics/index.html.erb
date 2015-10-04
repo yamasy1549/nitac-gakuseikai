@@ -1,36 +1,25 @@
-<div class="row">
-  <div class="col-md-4 hidden-sm">
-    <ul class="sns-buttons">
-      <li>
-        <%= link_to Settings.links.nitac.facebook.url, { target: '_blank' } do %>
-          <button class="btn btn-facebook">
-            <i class="fa fa-facebook-official"></i> 公式<%= Settings.links.nitac.facebook.service %>
-          </button>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to Settings.links.nitac.twitter.url, { target: '_blank' } do %>
-          <button class="btn btn-twitter">
-            <i class="fa fa-twitter"></i> 公式<%= Settings.links.nitac.twitter.service %>
-          </button>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to Settings.links.nitac.blog.url, { target: '_blank' } do %>
-          <button class="btn btn-blog">
-            <i class="fa fa-pencil-square-o"></i> 公式<%= Settings.links.nitac.blog.service %>
-          </button>
-        <% end %>
-      </li>
-      <li>
-        <a href="/links.html">
-          <button class="btn btn-blog">
-            <i class="fa fa-globe"></i> リンク
-          </button>
-        </a>
-      </li>
-    </ul>
-  </div>
+<ul class="sns-buttons">
+  <li>
+    <%= link_to Settings.links.nitac.facebook.url, class: 'btn btn-facebook', html: { target: '_blank' } do %>
+      <i class="fa fa-facebook-official"></i> 公式<%= Settings.links.nitac.facebook.service %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to Settings.links.nitac.twitter.url, class: 'btn btn-twitter', html: { target: '_blank' } do %>
+      <i class="fa fa-twitter"></i> 公式<%= Settings.links.nitac.twitter.service %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to Settings.links.nitac.blog.url, class: 'btn btn-blog', html: { target: '_blank' } do %>
+      <i class="fa fa-pencil-square-o"></i> 公式<%= Settings.links.nitac.blog.service %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to links_url, class: 'btn btn-link', html: { target: '_blank' } do %>
+      <i class="fa fa-globe"></i> リンク
+    <% end %>
+  </li>
+</ul>
 
   <div class="col-md-8 col-sm-12">
     <div class="news">
