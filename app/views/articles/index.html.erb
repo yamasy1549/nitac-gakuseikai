@@ -12,3 +12,30 @@
     </tr>
   <% end %>
 </table>
+
+<% if @user.errors.present? %>
+  <div class="alert alert-danger">
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @user, url: user_invitation_url, html: { class: "form-inline form-user-new" } do |f| %>
+  <div class="form-group">
+    <label class="sr-only" for="input-email">email</label>
+    <%= f.email_field :email, placeholder: "email", class: "form-control field-user-new", id: "input-email" %>
+  </div>
+  <%= button_tag 'Create', class: "btn btn-primary btn-user-new" %>
+<% end %>
+
+<table class="table">
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      <td><%= pluralize(user.sign_in_count, 'sign_in') %></td>
+    </tr>
+  <% end %>
+</table>
