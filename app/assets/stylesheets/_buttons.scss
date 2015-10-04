@@ -1,20 +1,20 @@
-.btn-actions {
-  margin: 5px auto 20px auto;
+.btn {
+  border: 1px solid $btn-border;
+  border-radius: $btn-radius;
+  background-color: $btn-bg;
+  color: $btn-color;
+  font-size: $base-size * 0.9;
+  padding: 4px 8px;
 
-  .btn {
-    border-color: $nitac-official;
-    border-radius: $btn-radius;
-    background-color: $white;
-    color: $gray;
-
-    &:hover {
-      border-color: $white;
-      background-color: $nitac-official;
-      color: $white;
-      text-decoration: none;
-    }
+  &:hover {
+    border-color: transparent;
+    background-color: $nitac-official;
+    color: $white;
+    text-decoration: none;
   }
 }
+
+.btn-actions { margin: 5px auto 20px auto; }
 
 .btn-edit,
 .btn-back,
@@ -26,17 +26,26 @@
 }
 
 .sns-buttons {
-  .btn-facebook { @include btn-original($facebook-official, $btn-width, $btn-height); }
-  .btn-twitter { @include btn-original($twitter-official, $btn-width, $btn-height); }
-  .btn-blog { @include btn-original($blog-official, $btn-width, $btn-height); }
+  .btn {
+    display: block;
+    height: $btn-height;
+    width: $btn-width;
 
-  li { margin-bottom: $margin-small; }
+    &:hover {
+      .btn-facebook { background-color: $facebook-official; }
+      .btn-twitter { background-color: $twitter-official; }
+      .btn-blog { background-color: $blog-official; }
+      .btn-link { background-color: $blog-official; }
+    }
+  }
+
+  li { margin-bottom: $space-small; }
 }
 
 .sns-buttons-sm {
-  .btn-facebook { @include btn-original($facebook-official, 100px, 100px); }
-  .btn-twitter { @include btn-original($twitter-official, 100px, 100px); }
-  .btn-blog { @include btn-original($blog-official, 100px, 100px); }
+  .btn-facebook { @include btn($facebook-official, 100px, 100px); }
+  .btn-twitter { @include btn($twitter-official, 100px, 100px); }
+  .btn-blog { @include btn($blog-official, 100px, 100px); }
 
-  li { margin-bottom: $margin-small; }
+  li { margin-bottom: $space-small; }
 }
