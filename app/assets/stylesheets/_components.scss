@@ -1,10 +1,16 @@
 .card {
   border: solid 1px $card-border-color;
   border-radius: $card-border-radius;
-  margin: auto auto $margin-medium auto;
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
 
   div[class*="-detail"] {
-    padding: $padding-small $space-large;
+    /* padding: $padding-small $space-large; */
+    display: table-cell;
+    float: left;
+    padding: 1% 5%;
+    width: 60%;
 
     a {
       color: $green-light;
@@ -18,13 +24,26 @@
   }
 
   div[class*="-img"] {
-    img { width: 100%; }
+    display: table-cell;
+    float: left;
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .department-img {
     @include border-right-radius($card-border-radius);
     padding-right: 0;
   }
+
+  .dep-taiiku { background-color: $dep-taiiku-official; }
+  .dep-bunka { background-color: $dep-bunka-official; }
+  .dep-kaikei { background-color: $dep-kaikei-official; }
+  .dep-kankyo { background-color: $dep-kankyo-official; }
+  .dep-shoki { background-color: $dep-shoki-official; }
+  .dep-koho { background-color: $dep-koho-official; }
 
   .event-img {
     @include border-left-radius($card-border-radius);
@@ -34,7 +53,7 @@
   .link-img,
   .actimes-img {
     @include border-top-radius($card-border-radius);
-    @include square(100%);
+    /* @include square(100%); */
     display: block;
   }
 }
@@ -49,7 +68,7 @@
 
 .news,
 .backnumbers {
-  h3 { margin: 0 auto $margin-medium auto; }
+  /* h3 { margin: 0 auto $margin-medium auto; } */
 
   a {
     color: $green-light;

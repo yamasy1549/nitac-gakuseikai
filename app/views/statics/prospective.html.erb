@@ -7,7 +7,7 @@
 
 <hr>
 
-<h3>局紹介</h3>
+<h2>局紹介</h2>
 
 <p>
   学生会執行部は6つの局に分かれています。それぞれの局がそれぞれの仕事を持っています。
@@ -16,13 +16,13 @@
 <ul class="departments">
   <% Settings.activities.departments.each do |department| %>
     <li>
-      <div class="card department-card row">
-        <div class="department-detail col-md-8 col-sm-8">
-          <h4><%= department.name %></h4>
+      <div class="card department-card">
+        <div class="department-detail">
+          <h3><%= department.name %></h3>
           <p><%= department.detail.html_safe %></p>
         </div>
-        <div class="col-md-4 col-sm-4 department-img">
-          <%= image_tag department.image %>
+        <div class="department-img <%= department.en %>">
+          <%= image_tag "#{department.en}.png" %>
         </div>
       </div>
     </li>
@@ -31,7 +31,7 @@
 
 <hr>
 
-<h3>執行部主催の行事</h3>
+<h2>執行部主催の行事</h2>
 
 <ul class="events">
   <% Settings.activities.events.each_with_index do |event, i| %>
