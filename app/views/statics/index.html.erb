@@ -24,7 +24,7 @@
 
 <div class="index">
   <div class="news">
-    <% @articles.take(2).each do |article| %>
+    <% @resent_articles.take(2).each do |article| %>
       <article>
         <h2><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h2>
         <% if user_signed_in? %>
