@@ -54,9 +54,15 @@
   .link-img,
   .actimes-img {
     @include border-top-radius($card-border-radius);
-    /* @include square(100%); */
     display: block;
+    width: 100%;
   }
+}
+
+.actimes-card {
+  margin: 0 20%;
+  margin-bottom: 30px;
+  width: 60%;
 }
 
 .actimes,
