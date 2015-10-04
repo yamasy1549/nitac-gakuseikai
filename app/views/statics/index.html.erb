@@ -27,7 +27,7 @@
     <div class="news">
       <% @articles.take(2).each do |article| %>
         <article>
-          <h3><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h3>
+          <h2><%= article.title %><small>（<%= article.created_at.strftime("%Y.%m.%d") %>）</small></h2>
           <% if user_signed_in? %>
             <div class="btn-actions">
               <%= btn_xs_show(article_path(article)) %>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="backnumbers">
-      <h3>バックナンバー</h3>
+      <h2>バックナンバー</h2>
       <ul>
         <% @articles.each do |article| %>
           <li>
