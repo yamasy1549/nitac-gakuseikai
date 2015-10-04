@@ -4,9 +4,9 @@
   <h3>高等専門学校</h3>
 
   <% Settings.links.schools.each_slice(2).to_a.each do |threeschools| %>
-    <ul class="links row">
+    <ul class="links">
       <% threeschools.each do |school| %>
-        <li class="col-md-6">
+        <li>
           <%= link_to school.url, class: 'links', target: '_blank' do %>
             <div class="card link-card">
               <%= image_tag school.img, class: 'link-img' %>
@@ -22,9 +22,9 @@
 <section>
   <h3>学生会・学友会</h3>
   <% Settings.links.associations.each_slice(2).to_a.each do |threeassociations| %>
-    <ul class="links row">
+    <ul class="links">
       <% threeassociations.each do |association| %>
-        <li class="col-md-6">
+        <li>
           <%= link_to association.url, class: 'links', target: '_blank' do %>
             <div class="card link-card">
               <%= image_tag association.img, class: 'link-img' %>
