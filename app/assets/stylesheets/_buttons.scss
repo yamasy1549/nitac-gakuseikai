@@ -1,17 +1,5 @@
 .btn {
-  border: 1px solid $btn-border;
-  border-radius: $btn-radius;
-  background-color: $btn-bg;
-  color: $btn-color;
-  font-size: $base-size * 0.9;
-  padding: 4px 8px;
-
-  &:hover {
-    border-color: transparent;
-    background-color: $nitac-official;
-    color: $white;
-    text-decoration: none;
-  }
+  @include btn($nitac-official, auto, auto);
 }
 
 .btn-actions { margin: 5px auto 20px auto; }
@@ -29,15 +17,15 @@
   .btn {
     display: block;
     height: $btn-height;
+    line-height: $btn-height;
+    text-align: center;
     width: $btn-width;
-
-    &:hover {
-      .btn-facebook { background-color: $facebook-official; }
-      .btn-twitter { background-color: $twitter-official; }
-      .btn-blog { background-color: $blog-official; }
-      .btn-link { background-color: $blog-official; }
-    }
   }
+
+  .btn-facebook { @include btn($facebook-official, auto, auto); }
+  .btn-twitter { @include btn($twitter-official, auto, auto); }
+  .btn-blog { @include btn($blog-official, auto, auto); }
+  .btn-link { @include btn($nitac-official, auto, auto); }
 
   li { margin-bottom: $space-small; }
 }

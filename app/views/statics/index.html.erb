@@ -1,24 +1,26 @@
 <ul class="sns-buttons">
   <li>
-    <%= link_to Settings.links.nitac.facebook.url, class: 'btn btn-facebook', html: { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.facebook.url, class: 'btn btn-facebook', target: '_blank' do %>
       <i class="fa fa-facebook-official"></i> 公式<%= Settings.links.nitac.facebook.service %>
     <% end %>
   </li>
   <li>
-    <%= link_to Settings.links.nitac.twitter.url, class: 'btn btn-twitter', html: { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.twitter.url, class: 'btn btn-twitter', target: '_blank' do %>
       <i class="fa fa-twitter"></i> 公式<%= Settings.links.nitac.twitter.service %>
     <% end %>
   </li>
   <li>
-    <%= link_to Settings.links.nitac.blog.url, class: 'btn btn-blog', html: { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.blog.url, class: 'btn btn-blog', target: '_blank' do %>
       <i class="fa fa-pencil-square-o"></i> 公式<%= Settings.links.nitac.blog.service %>
     <% end %>
   </li>
   <li>
-    <%= link_to links_url, class: 'btn btn-link', html: { target: '_blank' } do %>
+    <%= link_to links_url, class: 'btn btn-link', target: '_blank' do %>
       <i class="fa fa-globe"></i> リンク
     <% end %>
   </li>
+  <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a>
+  <%# <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> %>
 </ul>
 
   <div class="col-md-8 col-sm-12">
@@ -60,17 +62,17 @@
   </div>
 
   <div class="sns-buttons-sm visible-sm col-sm-12 text-center">
-    <%= link_to Settings.links.nitac.facebook.url, { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.facebook.url, target: '_blank' do %>
       <button class="btn btn-facebook">
         <i class="fa fa-facebook-official fa-3x"></i>
       </button>
     <% end %>
-    <%= link_to Settings.links.nitac.twitter.url, { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.twitter.url, target: '_blank' do %>
       <button class="btn btn-twitter fa-3x">
         <i class="fa fa-twitter"></i>
       </button>
     <% end %>
-    <%= link_to Settings.links.nitac.blog.url, { target: '_blank' } do %>
+    <%= link_to Settings.links.nitac.blog.url, target: '_blank' do %>
       <button class="btn btn-blog fa-3x">
         <i class="fa fa-pencil-square-o"></i>
       </button>
