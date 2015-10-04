@@ -18,7 +18,7 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["app/assets/stylesheets/*.scss","app/views/**/*.html.*","app/assets/javascripts/**/*.js.*"],
+    "files": ["app/assets/stylesheets/*.scss" ,"app/views/**/*.html.*" ,"app/assets/javascripts/**/*.js.*", "config/settings/*.yml"],
     "watchOptions": {},
     "server": false,
     "proxy": "localhost:7000",
