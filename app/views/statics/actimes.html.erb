@@ -9,12 +9,12 @@
   <ul class="actimes">
     <% Settings.actimes.actimes.each do |actime| %>
       <li>
-        <%= link_to actime.url, target: '_blank' do %>
-          <div class="card actimes-card">
+        <div class="actimes-card">
+          <%= link_to actime.url, target: '_blank' do %>
             <%= image_tag actime.img, class: 'actimes-img' %>
             <div class="actimes-title"><%= actime.date %>号 「<%= actime.title %>」</div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       </li>
     <% end %>
   </ul>

@@ -1,0 +1,31 @@
+.actimes {
+  padding: 0;
+  width: 100%;
+
+  a {
+    color: $green-light;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  li {
+    width: 50%;
+    display: table-cell;
+    float: left;
+  }
+
+  .actimes-card {
+    @include card;
+
+    margin: 0 10%;
+    margin-bottom: $space-medium;
+    text-align: center;
+    width: 80%;
+
+    .actimes-img {
+      @include border-top-radius($card-border-radius);
+      display: block;
+      width: 100%;
+    }
+  }
+}

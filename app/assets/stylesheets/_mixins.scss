@@ -42,3 +42,36 @@
   border-bottom-right-radius: $border-radius;
   border-top-right-radius: $border-radius;
 }
+
+@mixin card {
+  border: solid 1px $card-border-color;
+  border-radius: $card-border-radius;
+  display: table;
+  width: 100%;
+  margin-bottom: $space-medium;
+
+  div[class*="-detail"] {
+    display: table-cell;
+    float: left;
+    padding: 1% $card-detail-padding;
+    width: $card-detail-width;
+
+    a {
+      color: $green-light;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  div[class*="-img"] {
+    display: table-cell;
+    float: left;
+    width: $card-img-width;
+
+    img { width: 100%; }
+  }
+}

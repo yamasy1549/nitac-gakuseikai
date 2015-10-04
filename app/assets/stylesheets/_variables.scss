@@ -42,6 +42,9 @@ $btn-height: 50px;
 
 $card-border-color: $gray;
 $card-border-radius: $base-radius;
+$card-detail-width: 60%;
+$card-detail-padding: 5%;
+$card-img-width: 100% - $card-detail-width - $card-detail-padding * 2;
 
 $footer-height: 50px;
 $footer-color: $white;
@@ -66,3 +69,7 @@ $nav-hover-bg: $gray;
 $nav-hover-color: $white;
 $nav-radius: 0;
 
+$sns-buttons-padding: 5%;
+$sns-buttons-width: 25%;
+
+$index-width: 100% - $sns-buttons-padding * 2 - $sns-buttons-width;

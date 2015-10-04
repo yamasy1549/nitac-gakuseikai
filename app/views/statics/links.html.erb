@@ -3,36 +3,33 @@
 <section>
   <h3>高等専門学校</h3>
 
-  <% Settings.links.schools.each_slice(2).to_a.each do |threeschools| %>
-    <ul class="links">
-      <% threeschools.each do |school| %>
-        <li>
+  <ul class="links">
+    <% Settings.links.schools.each do |school| %>
+      <li>
+        <div class="link-card">
           <%= link_to school.url, class: 'links', target: '_blank' do %>
-            <div class="card link-card">
-              <%= image_tag school.img, class: 'link-img' %>
-              <%= school.name %>
-            </div>
+            <%= image_tag school.img, class: 'link-img' %>
+            <div class="link-title"><%= school.name %></div>
           <% end %>
-        </li>
-      <% end %>
-    </ul>
-  <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
 </section>
 
 <section>
   <h3>学生会・学友会</h3>
-  <% Settings.links.associations.each_slice(2).to_a.each do |threeassociations| %>
-    <ul class="links">
-      <% threeassociations.each do |association| %>
-        <li>
-          <%= link_to association.url, class: 'links', target: '_blank' do %>
-            <div class="card link-card">
-              <%= image_tag association.img, class: 'link-img' %>
-              <%= association.name %>
-            </div>
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
-  <% end %>
+
+  <ul class="links">
+    <% Settings.links.associations.each do |association| %>
+      <li>
+        <%= link_to association.url, class: 'links', target: '_blank' do %>
+          <div class="link-card">
+            <%= image_tag association.img, class: 'link-img' %>
+            <%= association.name %>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
 </section>

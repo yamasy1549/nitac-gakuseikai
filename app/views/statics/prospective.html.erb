@@ -17,7 +17,7 @@
   <ul class="departments">
     <% Settings.activities.departments.each do |department| %>
       <li>
-        <div class="card department-card">
+        <div class="department-card">
           <div class="department-detail">
             <h3><%= department.name %></h3>
             <p><%= department.detail.html_safe %></p>
@@ -37,7 +37,7 @@
   <ul class="events">
     <% Settings.activities.events.each_with_index do |event, i| %>
       <li>
-        <div class="card event-card" id="event-card<%= i + 1 %>">
+        <div class="event-card" id="event-card<%= i + 1 %>">
           <div class="event-img">
             <%= image_tag event.image, id: "event-img#{i + 1}" %>
           </div>

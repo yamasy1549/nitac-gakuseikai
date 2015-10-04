@@ -1,0 +1,16 @@
+.index {
+  display: table-cell;
+  width: $index-width;
+
+  .news,
+  .backnumbers {
+    a {
+      color: $green-light;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

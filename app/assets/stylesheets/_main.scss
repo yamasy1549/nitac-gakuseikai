@@ -5,8 +5,8 @@ main {
 
   .sns-buttons {
     display: table-cell;
-    padding: 0 5% 0 0;
-    width: 25%;
+    padding: 0 $sns-buttons-padding 0 0;
+    width: $sns-buttons-width;
   }
 
   a {
@@ -19,11 +19,6 @@ main {
     border-bottom: 1px solid $gray;
     margin: 60px auto;
     width: 20%;
-  }
-
-  .index {
-    display: table-cell;
-    width: 70%;
   }
 
   .prospective,

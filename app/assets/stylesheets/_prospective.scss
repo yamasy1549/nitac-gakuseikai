@@ -1,0 +1,29 @@
+.prospective {
+  .departments {
+    .department-card {
+      @include card;
+
+      .department-img {
+        @include border-right-radius($card-border-radius / 2);
+      }
+
+      .dep-taiiku { background-color: $dep-taiiku-official; }
+      .dep-bunka { background-color: $dep-bunka-official; }
+      .dep-kaikei { background-color: $dep-kaikei-official; }
+      .dep-kankyo { background-color: $dep-kankyo-official; }
+      .dep-shoki { background-color: $dep-shoki-official; }
+      .dep-koho { background-color: $dep-koho-official; }
+    }
+  }
+
+  .events {
+    .event-card {
+      @include card;
+
+      .event-img {
+        @include border-left-radius($card-border-radius / 2);
+        background-color: $gray;
+      }
+    }
+  }
+}
