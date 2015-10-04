@@ -89,6 +89,12 @@ nav {
         }
       }
     }
+
+    .now {
+      background-color: $nav-hover-bg;
+
+      a { color: $nav-hover-color; }
+    }
   }
 }
 
