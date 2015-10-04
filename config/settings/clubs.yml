@@ -1,210 +1,210 @@
-clubs:
-  sport:
+clubs: 
+  sport: 
     - name: 水泳部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: プール・プール周辺
+      sitename: 
+      siteurl: 
     - name: 剣道部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・水・木・金・　
+      active-time: 
+      place: 剣道場
+      sitename: 
+      siteurl: 
     - name: 柔道部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: 柔道場
+      sitename: 
+      siteurl: 
     - name: 野球部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 日・月・火・水・木・金・土
+      active-time: 
+      place: グラウンド
+      sitename: 
+      siteurl: 
     - name: 陸上競技部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: グラウンド
+      sitename: 
+      siteurl: 
     - name: 男子バレーボール部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 日・月・火・水・　・金・土
+      active-time: 
+      place: 体育館
+      sitename: 
+      siteurl: 
     - name: サッカー部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 日・月・火・水・木・金・土
+      active-time: 
+      place: グラウンド
+      sitename: 
+      siteurl: 
     - name: ハンドボール部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 日・月・火・水・木・金・土
+      active-time: 
+      place: 体育館・グラウンド
+      sitename: 
+      siteurl: 
     - name: 男子バスケットボール部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・水・　・金・土
+      active-time: 
+      place: 体育館
+      sitename: 
+      siteurl: 
+    - name: 女子バスケットボール部
+      activeday: 日・月・　・水・　・金・　
+      active-time: 
+      place: 体育館・校舎まわり
+      sitename: 
+      siteurl: 
     - name: ソフトテニス部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: テニスコート
+      sitename: 
+      siteurl: 
     - name: 卓球部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・　・　・金・土or日
+      active-time: 
+      place: 体育館
+      sitename: 
+      siteurl: 
     - name: クライミング部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・　・水・　・金　
+      active-time: 
+      place: 一般科棟東側のバス車庫
+      sitename: 
+      siteurl: 
     - name: テニス部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: テニスコート
+      sitename: 
+      siteurl: 
     - name: バドミントン部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・　・水・　・金・土
+      active-time: 
+      place: 体育館
+      sitename: 
+      siteurl: 
     - name: 女子バレーボール部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・　・木・　・土
+      active-time: 
+      place: 体育館・外
+      sitename: 
+      siteurl: 
     - name: 空手部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・　
+      active-time: 
+      place: 武道場
+      sitename: 
+      siteurl: 
 
-  culture:
+  culture: 
     - name: ESS部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 水or木
+      active-time: 
+      place: 合併教室
+      sitename: 
+      siteurl: 
     - name: 音楽部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: 部室（クラブハウス）
+      sitename: 
+      siteurl: 
     - name: 合唱団 Fons Musicae
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・　・　・金・　
+      active-time: 
+      place: 視聴覚室・階段教室
+      sitename: 
+      siteurl: 
     - name: 茶道部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・　・木・　・　
+      active-time: 
+      place: 福利施設2F 和室
+      sitename: 
+      siteurl: 
     - name: 写真部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 月2回ほどの講習会・各自練習
+      active-time: 
+      place: 情報メディアセンター
+      sitename: 
+      siteurl: 
     - name: 情報工学研究部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・　
+      active-time: 
+      place: 部室・総合メディアセンター
+      sitename: 
+      siteurl: 
     - name: 吹奏楽部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・土
+      active-time: 
+      place: 福利施設2F
+      sitename: 
+      siteurl: 
     - name: ロボット工学研究部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・　
+      active-time: 
+      place: プレハブ・器具庫・実習工場
+      sitename: 
+      siteurl: 
     - name: 視覚メディア研究部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・　・水・　・　・　
+      active-time: 
+      place: 部室（クラブハウス）
+      sitename: 
+      siteurl: 
     - name: Web製作研究部
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・　・木・　・　
+      active-time: 
+      place: 情報センター1F・演習室2
+      sitename: 
+      siteurl: 
+    - name: ゲーム創作研究部
+      activeday: 　・月・火・　・　・　・　
+      active-time: 
+      place: 4EJ教室
+      sitename: 
+      siteurl: 
 
-  others:
+  others: 
     - name: 棋道同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・　・水・　・金・　
+      active-time: 
+      place: 福利施設2F 和室
+      sitename: 
+      siteurl: 
     - name: ものづくり研究会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・火・水・木・金・　
+      active-time: 
+      place: 福利施設2F ミーティングルーム1
+      sitename: 
+      siteurl: 
     - name: イングリッシュガーデン同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
-    - name: ゲーム創作研究会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
-    - name: 水と緑の同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 昼休み
+      active-time: 
+      place: 一般科棟裏の中庭
+      sitename: 
+      siteurl: 
     - name: 体操同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・　・火・水・　・　・　
+      active-time: 
+      place: 体育館
+      sitename: 
+      siteurl: 
     - name: フットサル同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
-    - name: 女子バスケットボール同好会
-      activeday: 
-      active-time:
-      place:
-      sitename:
-      siteurl:
+      activeday: 　・月・　・　・木・　・　
+      active-time: 
+      place: グラウンド
+      sitename: 
+      siteurl: 
+    - name: 無線工学研究会
+      activeday: 　・　・　・　・木・　・　
+      active-time: 
+      place: メディアセンター
+      sitename: 
+      siteurl: 

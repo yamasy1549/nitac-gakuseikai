@@ -3,61 +3,61 @@
 <%# if false %>
 
 <h3>運動部</h3>
-<table class="table">
+<table class="club-table">
   <tr>
     <th>クラブ名</th>
     <th>活動日</th>
-    <th>活動時間</th>
+    <%# <th>活動時間</th> %>
     <th>活動場所</th>
-    <th>HP</th>
+    <%# <th>HP</th> %>
   </tr>
   <% Settings.clubs.sport.each do |club| %>
     <tr>
       <td><%= club.name %></td>
       <td><%= club.activeday %></td>
-      <td><%= club.activetime %></td>
+      <%# <td>[>= club.activetime <]</td> %>
       <td><%= club.place %></td>
-      <td><%= link_to club.sitename, club.siteurl %></td>
+      <%# <td>[>= link_to club.sitename, club.siteurl <]</td> %>
     </tr>
   <% end %>
 </table>
 
 <h3>文化部</h3>
-<table class="table">
+<table class="club-table">
   <tr>
     <th>クラブ名</th>
     <th>活動日</th>
-    <th>活動時間</th>
+    <%# <th>活動時間</th> %>
     <th>活動場所</th>
-    <th>HP</th>
+    <%# <th>HP</th> %>
   </tr>
   <% Settings.clubs.culture.each do |club| %>
     <tr>
       <td><%= club.name %></td>
       <td><%= club.activeday %></td>
-      <td><%= club.activetime %></td>
+      <%# <td>[>= club.activetime <]</td> %>
       <td><%= club.place %></td>
-      <td><%= link_to club.sitename, club.siteurl %></td>
+      <%# <td>[>= link_to club.sitename, club.siteurl <]</td> %>
     </tr>
   <% end %>
 </table>
 
 <h3>同好会</h3>
-<table class="table">
+<table class="club-table">
   <tr>
     <th>クラブ名</th>
     <th>活動日</th>
-    <th>活動時間</th>
+    <%# <th>活動時間</th> %>
     <th>活動場所</th>
-    <th>HP</th>
+    <%# <th>HP</th> %>
   </tr>
   <% Settings.clubs.others.each do |club| %>
     <tr>
       <td><%= club.name %></td>
       <td><%= club.activeday %></td>
-      <td><%= club.activetime %></td>
+      <%# <td>[>= club.activetime <]</td> %>
       <td><%= club.place %></td>
-      <td><%= link_to club.sitename, club.siteurl %></td>
+      <%# <td>[>= link_to club.sitename, club.siteurl <]</td> %>
     </tr>
   <% end %>
 </table>

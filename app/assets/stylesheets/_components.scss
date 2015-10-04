@@ -96,3 +96,18 @@
   text-align: center;
   a { text-decoration: none; }
 }
+
+.club-table {
+  text-align: left;
+  width: 100%;
+
+  th,
+  td {
+    padding: 0 2%;
+    border-right: 1px dotted $gray;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
