@@ -1,0 +1,11 @@
+.users {
+  .articles-table,
+  .users-table {
+    margin-bottom: $space-large;
+    width: 100%;
+
+    td { border-bottom: 1px solid lighten($gray, 40%); }
+
+    .btn-actions { margin-bottom: 5px; }
+  }
+}

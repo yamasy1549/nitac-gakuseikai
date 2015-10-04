@@ -1,41 +1,51 @@
-<table class="table">
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= truncate(article.content, omission: '...', length: 36) %></td>
-      <td>
-        <div class="btn-actions">
-          <%= btn_xs_show(article_path(article)) %>
-          <%= btn_xs_delete(article) %>
-        </div>
-      </td>
-    </tr>
+<div class="users">
+  <h2>記事一覧</h2>
+
+  <table class="articles-table">
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= truncate(article.title, ommition: '...', length: 10) %></td>
+        <td><%= truncate(article.content, omission: '...', length: 26) %></td>
+        <td><%= article.updated_at.strftime("%Y.%m.%d %H:%M") %></td>
+        <td>
+          <div class="btn-actions">
+            <%= btn_xs_show(article_path(article)) %>
+            <%= btn_xs_edit(edit_article_path(article)) %>
+            <%= btn_xs_delete(article) %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+  <h2>管理者一覧</h2>
+
+  <table class="users-table">
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= pluralize(user.sign_in_count, 'sign_in') %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <% if @user.errors.present? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
-</table>
 
-<% if @user.errors.present? %>
-  <div class="alert alert-danger">
-    <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+  <h2>管理者を招待する</h2>
 
-<%= form_for @user, url: user_invitation_url, html: { class: "form-inline form-user-new" } do |f| %>
-  <div class="form-group">
-    <label class="sr-only" for="input-email">email</label>
-    <%= f.email_field :email, placeholder: "email", class: "form-control field-user-new", id: "input-email" %>
-  </div>
-  <%= button_tag 'Create', class: "btn btn-primary btn-user-new" %>
-<% end %>
-
-<table class="table">
-  <% @users.each do |user| %>
-    <tr>
-      <td><%= user.email %></td>
-      <td><%= pluralize(user.sign_in_count, 'sign_in') %></td>
-    </tr>
+  <%= form_for @user, url: user_invitation_url, html: { class: "form-inline form-user-new" } do |f| %>
+    <div class="form-group">
+      <label class="sr-only" for="input-email">email</label>
+      <%= f.email_field :email, placeholder: "email", class: "form-control field-user-new", id: "input-email" %>
+    </div>
+    <%= button_tag '招待する', class: "btn" %>
   <% end %>
-</table>
+</div>
