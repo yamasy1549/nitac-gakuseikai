@@ -36,12 +36,12 @@
 <ul class="events">
   <% Settings.activities.events.each_with_index do |event, i| %>
     <li>
-      <div class="card event-card row" id="event-card<%= i + 1 %>">
-        <div class="col-md-4 col-sm-4 event-img">
+      <div class="card event-card" id="event-card<%= i + 1 %>">
+        <div class="event-img">
           <%= image_tag event.image, id: "event-img#{i + 1}" %>
         </div>
-        <div class="event-detail col-md-8 col-sm-8">
-          <h4><%= event.name %></h4>
+        <div class="event-detail">
+          <h3><%= event.name %></h3>
           <p><%= event.detail %></p>
         </div>
       </div>

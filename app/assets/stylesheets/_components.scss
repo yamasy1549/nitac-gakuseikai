@@ -34,7 +34,7 @@
   }
 
   .department-img {
-    @include border-right-radius($card-border-radius);
+    @include border-right-radius($card-border-radius / 2);
     padding-right: 0;
   }
 
@@ -46,7 +46,8 @@
   .dep-koho { background-color: $dep-koho-official; }
 
   .event-img {
-    @include border-left-radius($card-border-radius);
+    @include border-left-radius($card-border-radius / 2);
+    background-color: $gray;
     padding-left: 0;
   }
 
