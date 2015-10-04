@@ -18,7 +18,7 @@ $dep-kankyo-official: #78c397;
 
 //// shapes ////
 $base-radius: 4px;
-$base-size: 16px;
+$base-size: 14px;
 $base-line-height: 200%;
 
 $space-small: 10px;
@@ -42,9 +42,14 @@ $btn-height: 50px;
 
 $card-border-color: $gray;
 $card-border-radius: $base-radius;
-$card-detail-width: 60%;
 $card-detail-padding: 5%;
-$card-img-width: 100% - $card-detail-width - $card-detail-padding * 2;
+$card-detail-width: 100% - $card-detail-padding * 2;
+$card-img-width: 100%;
+
+$actimes-li-width: 100%;
+$link-li-width: 100%;
+
+$event-img-bg: transparent;
 
 $footer-height: 50px;
 $footer-color: $white;
@@ -53,23 +58,35 @@ $footer-bg: $gray;
 $header-color: $gray;
 $header-height: 50px;
 $header-logo-height: 50px;
-$header-padding: $space-small 10%;
-$header-title-width: 50%;
+$header-padding: 5%;
+$header-title-width: 100%;
+$header-title-font-size: $body-font-size * 1.4;
+$header-width: 100% - $header-padding * 2;
 
 $hr-margin: $space-large;
 
-$main-margin-top: $space-large;
+$main-margin-top: $space-small;
+$main-padding: 3%;
+$main-width: 100% - $main-padding * 2;
 
 $nav-bg: $white;
 $nav-border-color: $gray;
 $nav-border-bottom-color: $gray;
 $nav-color: $gray;
+$nav-font-size: $body-font-size * .8;
 $nav-height: 40px;
 $nav-hover-bg: $gray;
 $nav-hover-color: $white;
 $nav-radius: 0;
+$nav-ul-padding: 0%;
+$nav-ul-width: 100% - $nav-ul-padding * 2;
 
-$sns-buttons-padding: 5%;
+$sns-buttons-display: none;
 $sns-buttons-width: 25%;
+$sns-buttons-padding: 5%;
 
-$index-width: 100% - $sns-buttons-padding * 2 - $sns-buttons-width;
+$sns-buttons-sm-btn-width: 15%;
+$sns-buttons-sm-display: block;
+$sns-buttons-sm-width: 100%;
+
+$index-width: 100%;

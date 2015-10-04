@@ -42,9 +42,14 @@ $btn-height: 50px;
 
 $card-border-color: $gray;
 $card-border-radius: $base-radius;
-$card-detail-width: 60%;
 $card-detail-padding: 5%;
+$card-detail-width: 60%;
 $card-img-width: 100% - $card-detail-width - $card-detail-padding * 2;
+
+$actimes-li-width: 50%;
+$link-li-width: 50%;
+
+$event-img-bg: $gray;
 
 $footer-height: 50px;
 $footer-color: $white;
@@ -53,23 +58,36 @@ $footer-bg: $gray;
 $header-color: $gray;
 $header-height: 50px;
 $header-logo-height: 50px;
-$header-padding: $space-small 10%;
+$header-padding: 10%;
 $header-title-width: 50%;
+$header-title-font-size: auto;
+$header-width: 100% - $header-padding * 2;
 
 $hr-margin: $space-large;
 
 $main-margin-top: $space-large;
+$main-padding: 10%;
+$main-width: 100% - $main-padding * 2;
 
 $nav-bg: $white;
 $nav-border-color: $gray;
 $nav-border-bottom-color: $gray;
 $nav-color: $gray;
+$nav-font-size: $body-font-size;
 $nav-height: 40px;
 $nav-hover-bg: $gray;
 $nav-hover-color: $white;
 $nav-radius: 0;
+$nav-ul-padding: 10%;
+$nav-ul-width: 100% - $nav-ul-padding * 2;
 
+$sns-buttons-display: table-cell;
 $sns-buttons-padding: 5%;
 $sns-buttons-width: 25%;
+
+$sns-buttons-sm-btn-margin: 0%;
+$sns-buttons-sm-btn-width: 0%;
+$sns-buttons-sm-display: none;
+$sns-buttons-sm-width: 0%;
 
 $index-width: 100% - $sns-buttons-padding * 2 - $sns-buttons-width;

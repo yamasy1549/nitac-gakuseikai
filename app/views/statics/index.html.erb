@@ -19,7 +19,7 @@
       <i class="fa fa-globe"></i> リンク
     <% end %>
   </li>
-  <%# <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a> %>
+  <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a>
 </ul>
 
 <div class="index">
@@ -60,31 +60,22 @@
       <% end %>
     </ul>
   </div>
+
+  <div class="sns-buttons-sm">
+    <%= link_to Settings.links.nitac.facebook.url, class: 'btn-facebook', target: '_blank' do %>
+      <i class="fa fa-facebook-official"></i>
+    <% end %>
+    <%= link_to Settings.links.nitac.twitter.url, class: 'btn-twitter', target: '_blank' do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+    <%= link_to Settings.links.nitac.blog.url, class: 'btn-blog', target: '_blank' do %>
+      <i class="fa fa-pencil-square-o"></i>
+    <% end %>
+    <a href="/links.html" class="btn-link">
+      <i class="fa fa-globe"></i>
+    </a>
+    <a class="twitter-timeline" href="https://twitter.com/act_gakuseikai" data-widget-id="650499406286843904">@act_gakuseikaiさんのツイート</a>
+  </div>
 </div>
 
-<!--
-  <div class="sns-buttons-sm visible-sm col-sm-12 text-center">
-    <%#= link_to Settings.links.nitac.facebook.url, target: '_blank' do %>
-      <button class="btn btn-facebook">
-        <i class="fa fa-facebook-official fa-3x"></i>
-      </button>
-    <%# end %>
-    <%#= link_to Settings.links.nitac.twitter.url, target: '_blank' do %>
-      <button class="btn btn-twitter fa-3x">
-        <i class="fa fa-twitter"></i>
-      </button>
-    <%# end %>
-    <%#= link_to Settings.links.nitac.blog.url, target: '_blank' do %>
-      <button class="btn btn-blog fa-3x">
-        <i class="fa fa-pencil-square-o"></i>
-      </button>
-    <%# end %>
-    <a href="/links.html">
-      <button class="btn btn-blog">
-        <i class="fa fa-globe fa-3x"></i>
-      </button>
-    </a>
-  </div>
-  -->
-
-  <%# <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> %>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

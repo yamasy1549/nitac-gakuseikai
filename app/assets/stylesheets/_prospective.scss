@@ -1,5 +1,7 @@
 .prospective {
   .departments {
+    padding: 0;
+
     .department-card {
       @include card;
 
@@ -17,12 +19,14 @@
   }
 
   .events {
+    padding: 0;
+
     .event-card {
       @include card;
 
       .event-img {
         @include border-left-radius($card-border-radius / 2);
-        background-color: $gray;
+        background-color: $event-img-bg;
       }
     }
   }

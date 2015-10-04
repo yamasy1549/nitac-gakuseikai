@@ -1,35 +1,35 @@
-<h2>リンク</h2>
+<div class="links">
+  <section>
+    <h2>高等専門学校</h2>
 
-<section>
-  <h3>高等専門学校</h3>
-
-  <ul class="links">
-    <% Settings.links.schools.each do |school| %>
-      <li>
-        <div class="link-card">
-          <%= link_to school.url, class: 'links', target: '_blank' do %>
-            <%= image_tag school.img, class: 'link-img' %>
-            <div class="link-title"><%= school.name %></div>
-          <% end %>
-        </div>
-      </li>
-    <% end %>
-  </ul>
-</section>
-
-<section>
-  <h3>学生会・学友会</h3>
-
-  <ul class="links">
-    <% Settings.links.associations.each do |association| %>
-      <li>
-        <%= link_to association.url, class: 'links', target: '_blank' do %>
+    <ul class="links">
+      <% Settings.links.schools.each do |school| %>
+        <li>
           <div class="link-card">
-            <%= image_tag association.img, class: 'link-img' %>
-            <%= association.name %>
+            <%= link_to school.url, class: 'links', target: '_blank' do %>
+              <%= image_tag school.img, class: 'link-img' %>
+              <div class="link-title"><%= school.name %></div>
+            <% end %>
           </div>
-        <% end %>
-      </li>
-    <% end %>
-  </ul>
-</section>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+
+  <section>
+    <h2>学生会・学友会</h2>
+
+    <ul class="links">
+      <% Settings.links.associations.each do |association| %>
+        <li>
+          <%= link_to association.url, class: 'links', target: '_blank' do %>
+            <div class="link-card">
+              <%= image_tag association.img, class: 'link-img' %>
+              <%= association.name %>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+</div>

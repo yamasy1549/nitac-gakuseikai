@@ -14,15 +14,13 @@
   }
 }
 
-@mixin btn($hover-bg, $width, $height) {
+@mixin btn($hover-bg) {
   border: 1px solid $btn-border;
   border-radius: $btn-radius;
   background-color: $btn-bg;
   color: $btn-color;
   font-size: $base-size * 0.9;
-  height: $height;
   padding: 4px 8px;
-  width: $width;
 
   @include hover-bg($hover-bg);
   @include hover-color($white);

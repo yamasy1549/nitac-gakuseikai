@@ -1,12 +1,14 @@
 main {
   display: table;
-  padding: 0 10%;
-  width: 80%;
+  margin-top: $main-margin-top;
+  min-height: 100%;
+  padding: 0 $main-padding;
+  width: $main-width;
 
-  .sns-buttons {
-    display: table-cell;
-    padding: 0 $sns-buttons-padding 0 0;
-    width: $sns-buttons-width;
+  &:after {
+    content: "";
+    display: block;
+    height: $footer-height;
   }
 
   a {
@@ -23,7 +25,8 @@ main {
 
   .prospective,
   .actimes,
-  .clubs {
+  .clubs,
+  .links {
     h2,
     > p {
       text-align: center;

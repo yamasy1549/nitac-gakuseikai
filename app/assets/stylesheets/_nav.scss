@@ -33,17 +33,6 @@ footer {
   }
 }
 
-main {
-  margin-top: $main-margin-top;
-  min-height: 100%;
-
-  &:after {
-    content: "";
-    display: block;
-    height: $footer-height;
-  }
-}
-
 a { text-decoration: none; }
 
 li { list-style: none; }
@@ -66,11 +55,12 @@ nav {
     padding: 0;
     table-layout: fixed;
     text-align: center;
-    width: 80%;
-    padding: 0 10%;
+    padding: 0 $nav-ul-padding;
+    width: $nav-ul-width;
 
     li {
       display: table-cell;
+      font-size: $nav-font-size;
       vertical-align: middle;
       width: (100%/4);
 
@@ -102,7 +92,7 @@ nav {
   width: 100%;
 
   img {
-    padding: 0 10%;
-    width: 80%;
+    padding: 0 $nav-ul-padding;
+    width: $nav-ul-width;
   }
 }

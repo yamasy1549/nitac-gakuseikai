@@ -1,6 +1,11 @@
 .btn {
-  @include btn($nitac-official, auto, auto);
+  @include btn($nitac-official);
 }
+
+.btn-facebook { @include btn($facebook-official); }
+.btn-twitter { @include btn($twitter-official); }
+.btn-blog { @include btn($blog-official); }
+.btn-link { @include btn($nitac-official); }
 
 .btn-actions {
   margin: 5px auto 20px auto;
@@ -8,16 +13,11 @@
   a { color: $btn-color; }
 }
 
-.btn-edit,
-.btn-back,
-.btn-show,
-.btn-index,
-.btn-new,
-.btn-delete {
-  /* margin-top: 20px; */
-}
-
 .sns-buttons {
+  display: $sns-buttons-display;
+  padding: 0 $sns-buttons-padding 0 0;
+  width: $sns-buttons-width;
+
   .btn {
     display: block;
     height: $btn-height;
@@ -26,18 +26,20 @@
     width: $btn-width;
   }
 
-  .btn-facebook { @include btn($facebook-official, auto, auto); }
-  .btn-twitter { @include btn($twitter-official, auto, auto); }
-  .btn-blog { @include btn($blog-official, auto, auto); }
-  .btn-link { @include btn($nitac-official, auto, auto); }
-
   li { margin-bottom: $space-small; }
 }
 
 .sns-buttons-sm {
-  .btn-facebook { @include btn($facebook-official, 100px, 100px); }
-  .btn-twitter { @include btn($twitter-official, 100px, 100px); }
-  .btn-blog { @include btn($blog-official, 100px, 100px); }
+  display: $sns-buttons-sm-display;
+  text-align: center;
+  width: $sns-buttons-sm-width;
 
-  li { margin-bottom: $space-small; }
+  .btn-facebook,
+  .btn-twitter,
+  .btn-blog,
+  .btn-link {
+    display: inline-block;
+    margin-bottom: $space-small;
+    width: $sns-buttons-sm-btn-width;
+  }
 }
