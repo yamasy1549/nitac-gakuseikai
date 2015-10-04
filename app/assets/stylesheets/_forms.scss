@@ -1,0 +1,36 @@
+.form-group {
+  .form-control {
+    display: block;
+    width: 100%;
+    height: $body-font-size + 7px;
+    padding: 10px 20px;
+    font-size: $body-font-size;
+    line-height: $body-font-size;
+    color: $body-color;
+    background-image: none;
+    border: 1px solid $gray;
+    border-radius: $base-radius;
+  }
+
+  textarea.form-control {
+    height: 200px;
+    padding: 20px;
+  }
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
