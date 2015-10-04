@@ -34,8 +34,10 @@
               <%= btn_xs_delete(article) %>
             </div>
           <% end %>
-          <%= truncate(article.content, omission: '...', length: 300) %>
-          <%= link_to '続きを読む', article_url(article) %>
+          <div class="news-content">
+            <%= truncate(article.content, omission: '...', length: 300) %>
+            <%= link_to '続きを読む', article_url(article) %>
+          </div>
         </article>
         <hr>
       <% end %>

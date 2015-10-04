@@ -2,7 +2,11 @@
   @include btn($nitac-official, auto, auto);
 }
 
-.btn-actions { margin: 5px auto 20px auto; }
+.btn-actions {
+  margin: 5px auto 20px auto;
+
+  a { color: $btn-color; }
+}
 
 .btn-edit,
 .btn-back,

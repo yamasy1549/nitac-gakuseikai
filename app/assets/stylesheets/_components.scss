@@ -77,13 +77,15 @@
 .backnumbers {
   /* h3 { margin: 0 auto $margin-medium auto; } */
 
-  a {
-    color: $green-light;
-    text-decoration: none;
+  .news-content {
+    a {
+      color: $green-light;
+      text-decoration: none;
 
-    &:hover,
-    &:active {
-      text-decoration: underline;
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
     }
   }
 }
