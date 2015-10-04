@@ -1,0 +1,101 @@
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  margin: 0;
+  font-size: $body-font-size;
+  line-height: $base-line-height;
+  font-family: Verdana, Roboto, 'Droid Sans', 游ゴシック, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+footer {
+  color: $footer-color;
+  background-color: $footer-bg;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  height: $footer-height;
+  line-height: $footer-height;
+  text-align: center;
+
+  a {
+    font-weight: bold;
+    @include hover-color($white, $white);
+  }
+}
+
+main {
+  margin-top: $main-margin-top;
+  min-height: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    height: $footer-height;
+  }
+}
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+hr {
+  border-bottom: solid 1px $gray;
+  width: 20%;
+  margin: $hr-margin auto;
+}
+
+nav {
+  background-color: $nav-bg;
+  border-bottom: 6px solid $nav-border-color;
+  margin-top: $header-height + $space-medium;
+  width: 100%;
+
+  ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    text-align: center;
+    width: 80%;
+    padding: 0 10%;
+
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      width: (100%/4);
+
+      a {
+        color: $nav-color;
+        display: block;
+        height: $nav-height;
+        line-height: $nav-height;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+          background-color: $nav-hover-bg;
+          color: $nav-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.main-img {
+  width: 100%;
+
+  img {
+    padding: 0 10%;
+    width: 80%;
+  }
+}

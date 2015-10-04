@@ -1,10 +1,9 @@
 @mixin hover-color($default-color, $hover-color) {
-  text-decoration: none;
   color: $default-color;
+
   &:hover,
   &:active {
     color: $hover-color;
-    text-decoration: none;
   }
 }
 
@@ -16,12 +15,28 @@
   }
 }
 
-@mixin btn-original($hover-bg, $width, $height) {
+@mixin btn($hover-bg, $width, $height) {
   color: $gray;
   background-color: $white;
   border: solid 1px $gray;
-  border-radius: $base-radius;
+  border-radius: $btn-radius;
+  height: $height;
+  width: $width;
   @include hover-bg($hover-bg);
   @include hover-color($gray, $white);
-  @include size($width, $height);
+}
+
+@mixin border-top-radius($border-radius) {
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+
+@mixin border-left-radius($border-radius) {
+  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+
+@mixin border-right-radius($border-radius) {
+  border-bottom-right-radius: $border-radius;
+  border-top-right-radius: $border-radius;
 }

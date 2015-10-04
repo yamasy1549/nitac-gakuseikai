@@ -4,7 +4,7 @@
   margin: auto auto $margin-medium auto;
 
   div[class*="-detail"] {
-    padding: $padding-small $padding-large;
+    padding: $padding-small $space-large;
 
     a {
       color: $green-light;
@@ -45,13 +45,6 @@
     color: $green-light;
     text-decoration: none;
   }
-}
-
-.main-img {
-  text-align: center;
-  margin: 0 auto $margin-large auto;
-
-  img { width: 80%; }
 }
 
 .news,

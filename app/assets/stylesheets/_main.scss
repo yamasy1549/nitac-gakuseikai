@@ -1,0 +1,11 @@
+main {
+  display: table;
+  padding: 0 10%;
+  width:80%;
+
+  .sns-buttons {
+    display: table-cell;
+    padding: 0 $space-large 0 0;
+    width: 20%;
+  }
+}

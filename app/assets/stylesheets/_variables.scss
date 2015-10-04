@@ -1,57 +1,61 @@
 //// colors ////
 
-// officials //
 $nitac-official: #a14c4c;
 $facebook-official: #3b5998;
 $twitter-official: #55acee;
 $blog-official: $nitac-official;
 
-// others //
 $white: #ffffff;
 $gray: #666666;
 $green-light: #80b552;
-
 
 //// shapes ////
 $base-radius: 4px;
 $base-size: 16px;
 $base-line-height: 200%;
 
-$margin-small: 10px;
-$margin-medium: 30px;
-$margin-large: 60px;
-
-$padding-small: 10px;
-$padding-medium: 30px;
-$padding-large: 60px;
+$space-small: 10px;
+$space-medium: 30px;
+$space-large: 60px;
 
 
 //// components ////
 
-// navbar //
-$navbar-bg: $white;
-$navbar-border-color: transparent;
-$navbar-height: 40px;
-$navbar-radius: 0;
+$body-bg: $white;
+$body-color: $gray;
+$body-font-size: $base-size;
+$body-line-height: $base-line-height;
 
-// header //
-$header-height: 80px;
-
-// footer //
-$footer-height: 50px;
-$footer-color: $white;
-$footer-bg: $gray;
-
-// button //
+$btn-bg: $white;
+$btn-border: $gray;
+$btn-color: $gray;
 $btn-radius: $base-radius;
 $btn-width: 160px;
 $btn-height: 50px;
 
-// card //
 $card-border-color: $gray;
 $card-border-radius: $base-radius;
 
-// all //
-$base-bg: $white;
-$base-color: $gray;
+$footer-height: 50px;
+$footer-color: $white;
+$footer-bg: $gray;
+
+$header-color: $gray;
+$header-height: 50px;
+$header-logo-height: 50px;
+$header-padding: $space-small 10%;
+$header-title-width: 50%;
+
+$hr-margin: $space-large;
+
+$main-margin-top: $space-large;
+
+$nav-bg: $white;
+$nav-border-color: $gray;
+$nav-border-bottom-color: $gray;
+$nav-color: $gray;
+$nav-height: 40px;
+$nav-hover-bg: $gray;
+$nav-hover-color: $white;
+$nav-radius: 0;
 

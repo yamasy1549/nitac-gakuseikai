@@ -1,0 +1,27 @@
+header {
+  color: $header-color;
+  display: table;
+  height: $header-height;
+  padding: $header-padding;
+  position: absolute;
+  top: 0;
+  width: 80%;
+
+  h1 {
+    display: table-cell;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-weight: bold;
+    width: $header-title-width;
+
+    .logo { height: $header-logo-height; }
+
+    a { @include hover-color($gray, $gray); }
+
+    * {
+      line-height: $header-logo-height;
+      vertical-align: middle;
+    }
+  }
+
+  .btn-actions { text-align: right; }
+}

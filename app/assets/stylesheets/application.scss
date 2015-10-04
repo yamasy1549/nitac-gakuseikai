@@ -13,13 +13,14 @@
  *= require_self
  */
 
-@import 'variables';
-@import 'mixins';
-
 // font-awesome
 @import 'font-awesome';
 
 // Originals
-@import 'common';
-@import 'components';
+@import 'variables';
+@import 'mixins';
 @import 'buttons';
+
+@import 'header';
+@import 'nav';
+@import 'main';
