@@ -1,50 +1,52 @@
-<p>
-  学生会執行部というのは、皆さんの学校でいう生徒会のような組織です。
-  ただ高専の場合は先生の指示ではなく、学生主導で行事の運営といった
-  学校を変え、より良くする仕事をしています。
-  ここでは学生会執行部の仕組み・主な仕事・運営している行事をまとめています。
-</p>
+<div class="prospective">
+  <p>
+    学生会執行部というのは、皆さんの学校でいう生徒会のような組織です。
+    ただ高専の場合は先生の指示ではなく、学生主導で行事の運営といった
+    学校を変え、より良くする仕事をしています。
+    ここでは学生会執行部の仕組み・主な仕事・運営している行事をまとめています。
+  </p>
 
-<hr>
+  <hr>
 
-<h2>局紹介</h2>
+  <h2>局紹介</h2>
 
-<p>
-  学生会執行部は6つの局に分かれています。それぞれの局がそれぞれの仕事を持っています。
-</p>
+  <p>
+    学生会執行部は6つの局に分かれています。それぞれの局がそれぞれの仕事を持っています。
+  </p>
 
-<ul class="departments">
-  <% Settings.activities.departments.each do |department| %>
-    <li>
-      <div class="card department-card">
-        <div class="department-detail">
-          <h3><%= department.name %></h3>
-          <p><%= department.detail.html_safe %></p>
+  <ul class="departments">
+    <% Settings.activities.departments.each do |department| %>
+      <li>
+        <div class="card department-card">
+          <div class="department-detail">
+            <h3><%= department.name %></h3>
+            <p><%= department.detail.html_safe %></p>
+          </div>
+          <div class="department-img <%= department.en %>">
+            <%= image_tag "#{department.en}.png" %>
+          </div>
         </div>
-        <div class="department-img <%= department.en %>">
-          <%= image_tag "#{department.en}.png" %>
-        </div>
-      </div>
-    </li>
-  <% end %>
-</ul>
+      </li>
+    <% end %>
+  </ul>
 
-<hr>
+  <hr>
 
-<h2>執行部主催の行事</h2>
+  <h2>執行部主催の行事</h2>
 
-<ul class="events">
-  <% Settings.activities.events.each_with_index do |event, i| %>
-    <li>
-      <div class="card event-card" id="event-card<%= i + 1 %>">
-        <div class="event-img">
-          <%= image_tag event.image, id: "event-img#{i + 1}" %>
+  <ul class="events">
+    <% Settings.activities.events.each_with_index do |event, i| %>
+      <li>
+        <div class="card event-card" id="event-card<%= i + 1 %>">
+          <div class="event-img">
+            <%= image_tag event.image, id: "event-img#{i + 1}" %>
+          </div>
+          <div class="event-detail">
+            <h3><%= event.name %></h3>
+            <p><%= event.detail %></p>
+          </div>
         </div>
-        <div class="event-detail">
-          <h3><%= event.name %></h3>
-          <p><%= event.detail %></p>
-        </div>
-      </div>
-    </li>
-  <% end %>
-</ul>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,13 +1,37 @@
 main {
   display: table;
   padding: 0 10%;
-  width:80%;
+  width: 80%;
 
   .sns-buttons {
     display: table-cell;
-    padding: 0 $space-large 0 0;
+    padding: 0 5% 0 0;
+    width: 25%;
+  }
+
+  a {
+    color: $green-light;
+    text-decoration: none;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid $gray;
+    margin: 60px auto;
     width: 20%;
   }
 
-  a { color: $green-light; }
+  .index {
+    display: table-cell;
+    width: 70%;
+  }
+
+  .prospective,
+  .actimes,
+  .clubs {
+    h2,
+    > p {
+      text-align: center;
+    }
+  }
 }

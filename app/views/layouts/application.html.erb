@@ -40,6 +40,7 @@
           <%= current_user.email %>
           <%= btn_new(new_article_path) %>
           <%= btn_index(articles_path) %>
+          <%= link_to 'ログアウト', destroy_user_session_url, method: :delete %>
         </div>
       <% end %>
     </header>
@@ -61,9 +62,11 @@
       </ul>
     </nav>
 
-    <div class="main-img">
-      <%= image_tag 'top.JPG', alt: 'トップ画像' if params[:action] == 'index' %>
-    </div>
+    <% if params[:action] == 'index' %>
+      <div class="main-img">
+        <%= image_tag 'top.JPG', alt: 'トップ画像' %>
+      </div>
+    <% end %>
 
     <main>
       <% if user_signed_in? %>
