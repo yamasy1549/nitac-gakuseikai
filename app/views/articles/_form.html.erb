@@ -20,7 +20,6 @@
     <%= f.text_area :content, size: '20x20', class: 'form-control' %>
   </div>
   <div class="btn-actions">
-    <%= f.submit '投稿する', class: 'btn btn-default' if params[:action] == 'new' %>
-    <%= f.submit '完了する', class: 'btn btn-default' if params[:action] == 'edit' %>
+    <%= f.submit '投稿する', class: 'btn btn-default' %>
   </div>
 <% end %>
