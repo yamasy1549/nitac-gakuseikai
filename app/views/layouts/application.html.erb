@@ -22,6 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <%= stylesheet_link_tag 'application_smartphone', media: 'only screen and (max-width: 34em)' %>
 
     <title>明石高専 学生会執行部 | <%#= current_page.data.title || nil %></title>
   </head>
@@ -100,11 +101,8 @@
       </p>
     </footer>
 
-    <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': true %>
-    <%#= javascript_include_tag 'application', 'data-turbolinks-track': true %>
     <%= stylesheet_link_tag 'application', media: 'only screen and (min-width: 62em)' %>
     <%= stylesheet_link_tag 'application_tablet', media: 'only screen and (min-width: 34em) and (max-width: 62em)' %>
-    <%= stylesheet_link_tag 'application_smartphone', media: 'only screen and (max-width: 34em)' %>
 
     <%= javascript_include_tag 'application' %>
   </body>
