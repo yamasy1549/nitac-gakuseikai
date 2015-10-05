@@ -46,7 +46,6 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_best_practices'
   gem 'did_you_mean'
-  gem 'xray-rails'
 
   gem 'annotate'
 end
