@@ -20,6 +20,8 @@ gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery'
 gem 'rails-assets-jquery-ujs'
 
+gem 'dotenv-rails'
+
 group :development, :test  do
   gem 'rspec-rails'
   gem 'sqlite3'
