@@ -1,2 +1,1 @@
-web: rails s
-/* bs: ruby -e "sleep 1 until File.exists?('tmp/pids/server.pid')" && browser-sync --config bs-config.js start */
+web: bundle exec rails server -p $PORT -e $RAILS_ENV
