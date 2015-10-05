@@ -1,7 +1,12 @@
-<p><%= t("devise.mailer.invitation_instructions.hello", email: @resource.email) %></p>
+<p><%= @resource.email %>さん</p>
 
-<p><%= t("devise.mailer.invitation_instructions.someone_invited_you", url: root_url) %></p>
+<p>明石高専 学生会執行部Webサイト（<%= root_url %>）の管理者があなたを招待しました。下の「招待を受ける」リンクからパスワードを設定してください。</p>
 
-<p><%= link_to t("devise.mailer.invitation_instructions.accept"), accept_user_invitation_url(@resource, :invitation_token => @token) %></p>
+<p><%= link_to '招待を受ける', accept_user_invitation_url(@resource, :invitation_token => @token) %></p>
 
-<p><%= t("devise.mailer.invitation_instructions.ignore").html_safe %></p>
+<p>招待を受けない（管理者にならない）場合、このメールは無視してください。リンク先でパスワードを設定しないかぎり、あなたが管理者になることはありません。</p>
+<p>上記のリンクは、他の人に教えないでください。</p>
+
+<br>
+
+<p>明石高専学生会広報局 Webサイト管理担当</p>
