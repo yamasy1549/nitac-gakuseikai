@@ -27,5 +27,8 @@ header {
     }
   }
 
-  .btn-actions { text-align: right; }
+  .btn-actions {
+    display: $header-user-btn-actions-display;
+    text-align: right;
+  }
 }

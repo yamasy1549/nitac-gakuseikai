@@ -13,6 +13,11 @@
   a { color: $btn-color; }
 }
 
+.user-btn-actions-sm {
+  display: $user-btn-actions-sm-display;
+  text-align: center;
+}
+
 .sns-buttons {
   display: $sns-buttons-display;
   padding: 0 $sns-buttons-padding 0 0;

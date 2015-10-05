@@ -81,6 +81,16 @@
       <%= yield %>
     </main>
 
+    <% if user_signed_in? %>
+      <div class="user-btn-actions-sm btn-actions">
+        <%= current_user.email %>
+        <br>
+        <%= btn_new(new_article_path) %>
+        <%= btn_index(articles_path) %>
+        <%= link_to 'ログアウト', destroy_user_session_url, method: :delete %>
+      </div>
+    <% end %>
+
     <footer>
       <p>
         <%= link_to Settings.links.nitac.github.url, { target: '_blank' } do %>
