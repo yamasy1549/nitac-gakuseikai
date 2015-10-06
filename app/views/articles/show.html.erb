@@ -1,4 +1,4 @@
-<article class="news">
+<article class="article">
   <h2><%= @article.title %>（<%= @article.created_at.strftime("%Y/%m/%d") %>）</h2>
 
   <% if user_signed_in? %>
@@ -8,5 +8,6 @@
     </div>
   <% end %>
 
+  <%= image_tag(@article.image_url, alt: @article.title, class: 'article-img') if @article.image.present? %>
   <p><%= @article.content.html_safe %></p>
 </article>

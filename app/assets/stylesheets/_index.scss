@@ -3,6 +3,12 @@
   width: $index-width;
 
   .news-content {
+    .article-img {
+      display: block;
+      max-width: 100%;
+      margin-bottom: $space-medium;
+    }
+
     a {
       color: $green-light;
 

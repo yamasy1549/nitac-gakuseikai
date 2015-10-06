@@ -34,6 +34,9 @@
           </div>
         <% end %>
         <div class="news-content">
+          <%= link_to article_url(article) do %>
+            <%= image_tag(article.image_url, alt: article.title, class: 'article-img') if article.image.present? %>
+          <% end %>
           <%= truncate(article.content, omission: '...', length: 300) %>
           <%= link_to 'すべて見る', article_url(article) %>
         </div>
