@@ -19,6 +19,11 @@
     <%= f.label :content %>
     <%= f.text_area :content, size: '20x20', class: 'form-control' %>
   </div>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control' %>
+  </div>
+
   <div class="btn-actions">
     <%= f.submit '投稿する', class: 'btn btn-default' %>
   </div>
