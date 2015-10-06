@@ -9,5 +9,5 @@
   <% end %>
 
   <%= image_tag(@article.image_url, alt: @article.title, class: 'article-img') if @article.image.present? %>
-  <p><%= @article.content.html_safe %></p>
+  <p><%= simple_format(@article.content.html_safe) %></p>
 </article>
