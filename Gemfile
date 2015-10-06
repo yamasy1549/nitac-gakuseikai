@@ -16,6 +16,9 @@ gem 'devise',           '~> 3.5.2'
 gem 'devise_invitable', '~> 1.5.2'
 gem 'config'
 
+gem 'carrierwave'
+gem 'cloudinary'
+
 gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery'
 gem 'rails-assets-jquery-ujs'
