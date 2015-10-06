@@ -1,7 +1,7 @@
 class StaticsController < ApplicationController
   def index
     @articles = Article.all
-    @resent_articles = @articles[0..1]
+    @resent_articles = @articles[-2..-1].reverse
   end
 
   def prospective
