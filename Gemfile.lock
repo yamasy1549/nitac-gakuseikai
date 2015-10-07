@@ -108,6 +108,8 @@ GEM
     ffaker (2.1.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    heroku-deflater (0.5.3)
+      rack (>= 1.4.5)
     hirb (0.7.3)
     hirb-unicode (0.0.5)
       hirb (~> 0.5)
@@ -288,6 +290,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   ffaker
+  heroku-deflater
   hirb
   hirb-unicode
   jbuilder (~> 2.0)
