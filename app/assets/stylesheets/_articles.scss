@@ -1,7 +1,7 @@
 .article {
   .article-img {
     display: block;
-    max-width: 100%;
+    max-width: $article-link-width;
     margin-bottom: $space-medium;
   }
 }

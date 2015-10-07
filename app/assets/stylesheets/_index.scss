@@ -3,6 +3,11 @@
   width: $index-width;
 
   .news-content {
+    .article-link {
+      display: block;
+      width: $article-link-width;
+    }
+
     .article-img {
       display: block;
       max-width: 100%;
