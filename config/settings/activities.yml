@@ -22,13 +22,13 @@ activities:
   events:
     - name: 部活動紹介
       detail: 新入生が自分の入りたい部活動を良く知って選べるよう、文化局が開催する行事です。各部活がブースを設け、ステージで発表したりしてアピールします。
-      image: event-introduce-clubs.png
+      image: event-introduce-clubs.jpg
     - name: 文化発表会
       detail: 文化部が自分達の活動を発表するためにできた行事です。展示とステージ発表の部があり、吹奏楽の演奏や音楽部のライブはとても盛り上がります！
-      image: event-cultural-festival.png
+      image: event-cultural-festival.jpg
     - name: スポーツ大会
       detail: 各クラス学科が鎬を削り、優勝を目指す年に一度のスポーツの祭典です。球技を中心に様々な種目がありクラスの団結力が試されます。優勝したクラスには賞品が授与されます。
-      image: event-sports-festival.png
+      image: event-sports-festival.jpg
     - name: サッカー大会
       detail: 毎年冬に昼休みを利用しクラス対抗サッカー大会が開催されます。一年生が五年生に勝つなど波乱の展開があり楽しい行事です。もちろん優勝したクラスには賞品が授与されます。
-      image: event-soccer-festival.png
+      image: event-soccer-festival.jpg
