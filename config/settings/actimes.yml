@@ -1,20 +1,25 @@
 actimes:
   actimes:
+    - date: 2015年11月
+      title: フォトコンテスト応募受付中！
+      url: actimes-2015-11.pdf
+      img: actimes-2015-11.png
+    - date: 2015年10月
+      title: スポーツ大会報告
+      url: actimes-2015-10.pdf
+      img: actimes-2015-10.png
     - date: 2014年7月
       title: 文発活動報告
       url: actimes-2014-07.pdf
       img: actimes-2014-07.png
-
     - date: 2013年10月
       title: 球技大会
       url: actimes-2013-10.pdf
       img: actimes-2013-10.png
-
     - date: 2013年6月
       title: 文化発表会
       url: actimes-2013-06.pdf
       img: actimes-2013-06.png
-
     - date: 2013年4月
       title: ご入学おめでとうございます！
       url: actimes-2013-04.pdf
