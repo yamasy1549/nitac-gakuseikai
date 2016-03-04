@@ -12,8 +12,8 @@
 class AttachedImage < ActiveRecord::Base
   belongs_to :article
 
-  validates :article_id, presence: true
-  validates :url, presence: true
+  # validates :article_id, presence: true
+  # validates :url, presence: true
 
   mount_uploader :url, ImageUploader
 end
