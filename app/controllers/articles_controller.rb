@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    5.times { @article.attached_images.build }
   end
 
   def edit
@@ -58,6 +59,6 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-      params.require(:article).permit(:title, :content, :image)
+      params.require(:article).permit(:title, :content, attached_images_attributes: [:url])
     end
 end
