@@ -1,6 +1,6 @@
 class StaticsController < ApplicationController
   def index
-    @articles = Article.all.try(:reverse)
+    @articles = Article.all.order('created_at desc')
     @recent_articles = @articles.first(2)
   end
 
