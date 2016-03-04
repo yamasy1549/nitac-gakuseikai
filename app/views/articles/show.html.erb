@@ -8,6 +8,8 @@
     </div>
   <% end %>
 
-  <%= image_tag(@article.image_url(:pixel_face), alt: @article.title, class: 'article-img') if @article.image.present? %>
   <p><%= simple_format(@article.content.html_safe) %></p>
+  <% @article.attached_images.each do |image| %>
+    <%= image_tag(image.url.url(:pixel_face), alt: @article.title, class: 'article-img') if image.present? %>
+  <% end %>
 </article>
